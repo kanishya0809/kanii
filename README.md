@@ -1,32 +1,61 @@
-# React + TypeScript + Vite
+# ⚡ CYBER//VOID 2030 — The Neural Cyberpunk Digital Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> An award-winning, mind-blowing futuristic digital experience combining Apple precision, Awwwards experimental interactions, and high-voltage cyberpunk aesthetics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo & Deployment to GitHub Pages
 
-## React Compiler
+This repository includes a pre-configured GitHub Actions workflow (`.github/workflows/deploy.yml`) for automated, zero-configuration deployment to **GitHub Pages**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Step 1: Create a New Repository on GitHub
+1. Go to [GitHub New Repository](https://github.com/new).
+2. Name your repository (e.g., `cyberpunk-aesthetics` or `cyber-void`).
+3. Leave **"Initialize this repository with a README"** **UNCHECKED**.
+4. Click **Create repository**.
 
-## Expanding the Oxlint configuration
+### Step 2: Push Your Code to GitHub
+Run the following commands in your terminal:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+```bash
+cd C:\Users\HP\.gemini\antigravity\scratch\cyberpunk-aesthetics
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Link your new GitHub repository (replace with your GitHub username and repo name)
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+
+# Push the main branch
+git push -u origin main
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Step 3: Enable GitHub Pages in Repository Settings
+1. Go to your repository on GitHub.
+2. Click **Settings** (top tab) ➔ **Pages** (left sidebar).
+3. Under **Build and deployment** ➔ **Source**, select **GitHub Actions**.
+4. That's it! GitHub will automatically trigger the deployment workflow and give you your live URL:
+   `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
+---
+
+## 🛠️ Tech Stack
+
+- **React 18** + **Vite 6**
+- **Three.js** (WebGL 3D Interactive Cyber Core & Shaders)
+- **Tailwind CSS** (Custom Neon Design System & Glassmorphism)
+- **Lucide React** (Vector HUD Icons)
+- **Canvas Confetti** (Hyperspace warp bursts)
+- **Web Audio API** (Pure native synthesized audio engine — zero external audio assets)
+
+---
+
+## 💻 Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
